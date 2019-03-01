@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<a href="http://www.baidu.com">百度</a>
+		<script type="text/javascript">
+			
+			// 放入一个新的球
+			// location.assign('http://www.feifanedu.com.cn');
+			// 用一个新球替换当前的球
+			// location.replace('');
+			// 把球拿出来擦一擦再放进去
+			// location.reload();
+			
+			$.ajax({
+				type:"post",
+				url:"/",
+				data:{id:123,keyword:'水果'},
+				success:function(res){},
+				error:function(err){},
+				async:true
+			});
+		</script>
+	</body>
+</html>
